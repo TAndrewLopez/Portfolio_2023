@@ -1,4 +1,5 @@
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { GiTie } from "react-icons/gi";
 import { GoLocation } from "react-icons/go";
@@ -8,6 +9,11 @@ const Sidebar = () => {
   const changeTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
+  const [button, setButton] = useState("");
+
+  useEffect(() => {
+    theme === "dark" ? setButton("Light UI") : setButton("Dark UI");
+  }, [theme]);
 
   return (
     <div>
@@ -58,7 +64,7 @@ const Sidebar = () => {
       <button
         className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-default to-blue-400 focus:outline-none"
         onClick={changeTheme}>
-        {theme === "dark" ? "Light UI" : "Dark UI"}
+        {button}
       </button>
     </div>
   );

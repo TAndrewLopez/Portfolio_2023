@@ -3,7 +3,7 @@ import { FaCode } from "react-icons/fa";
 import { SiAntdesign } from "react-icons/si";
 import { MdLeaderboard } from "react-icons/md";
 import { BsCircleFill } from "react-icons/bs";
-import { Service, Skill } from "types";
+import { Project, Service, Skill } from "types";
 
 export const services: Service[] = [
   {
@@ -85,4 +85,41 @@ export const tools: Skill[] = [
   { name: "Git", level: "100", Icon: BsCircleFill },
   { name: "Github", level: "100", Icon: BsCircleFill },
   { name: "Figma", level: "100", Icon: BsCircleFill },
+];
+
+export const projects: Project[] = [
+  {
+    name: "Discourse Forum",
+    description: "Community Forum Website",
+    imageURL: "/images/discourse.png",
+    deployedURL: "https://discourse-forum.vercel.app/",
+    githubURL: "https://github.com/TAndrewLopez/discourse",
+    category: ["react", "nosql"],
+    technologies: ["Next.js", "TypeScript", "Chakra", "Recoil", "Firebase"],
+  },
+  {
+    name: "Generational Records",
+    description: "E-Commerce Website",
+    imageURL: "/images/genRecords.jpeg",
+    deployedURL: "https://gen-records.vercel.app/",
+    githubURL: "https://github.com/TAndrewLopez/gen_records_nextjs",
+    category: ["react", "postgresql"],
+    technologies: [
+      "Next.js",
+      "Postgresql",
+      "Sequelize",
+      "Tailwindcss",
+      "Redux",
+      "Stripe",
+    ],
+  },
+  {
+    name: "Linkuistix",
+    description: "Word association game powered by AI",
+    imageURL: "/images/linkuistix.png",
+    deployedURL: "https://linkuistix.com/game",
+    githubURL: "https://github.com/DrTeethCapstone/Linkuistix",
+    category: ["react", "nosql"],
+    technologies: ["JavaScript", "Tensorflow.js", "Pixi.js", "Firebase"],
+  },
 ];
