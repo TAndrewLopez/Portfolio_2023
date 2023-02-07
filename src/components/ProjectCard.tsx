@@ -1,28 +1,29 @@
 import { fadeInUp, stagger } from "animations";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useState } from "react";
 import { AiFillGithub, AiFillProject } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import { Project } from "types";
 
 type ProjectCardProps = {
   project: Project;
+  showDetails: number | null;
+  setShowDetails: (id: null | number) => void;
 };
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   project: {
+    id,
     name,
-    category,
     deployedURL,
     description,
     githubURL,
     imageURL,
     technologies,
   },
+  showDetails,
+  setShowDetails,
 }) => {
-  const [showDetails, setShowDetails] = useState(false);
-
   return (
     <div>
       <div className="w-full">
@@ -32,16 +33,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           src={imageURL}
           alt={name}
           className="cursor-pointer"
-          onClick={() => setShowDetails(true)}
+          onClick={() => setShowDetails(id)}
           style={{ width: "100%" }}
           priority
         />
       </div>
       <p className="my-2 text-center">{name}</p>
-      {showDetails && (
-        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
+      {showDetails === id && (
+        <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-dark-100">
           <motion.div variants={stagger} initial="initial" animate="animate">
-            <motion.div variants={fadeInUp}>
+            <motion.div
+              variants={fadeInUp}
+              className="border-4 border-gray-100">
               <Image
                 width={300}
                 height={150}
@@ -93,7 +96,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <motion.button
             variants={fadeInUp}
             className="absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-dark-200"
-            onClick={() => setShowDetails(false)}>
+            onClick={() => setShowDetails(null)}>
             <MdClose size={30} />
           </motion.button>
         </div>

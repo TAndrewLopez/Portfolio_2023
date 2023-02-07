@@ -89,6 +89,7 @@ export const tools: Skill[] = [
 
 export const projects: Project[] = [
   {
+    id: 1,
     name: "Discourse Forum",
     description: "Community Forum Website",
     imageURL: "/images/discourse.png",
@@ -98,6 +99,7 @@ export const projects: Project[] = [
     technologies: ["Next.js", "TypeScript", "Chakra", "Recoil", "Firebase"],
   },
   {
+    id: 2,
     name: "Gen Records",
     description: "E-Commerce Website",
     imageURL: "/images/genRecords.jpeg",
@@ -114,6 +116,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: 3,
     name: "Linkuistix",
     description: "Word association game powered by AI",
     imageURL: "/images/linkuistix.png",

@@ -34,8 +34,9 @@ const Sidebar = () => {
       </p>
       <a
         className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full dark:bg-dark-200"
-        href=""
-        download="name">
+        // TODO: upload resume to asset folder when completed
+        href="/assets/developerResume.pdf"
+        download="AndrewDobsonResume.pdf">
         <GiTie className="w-6 h-6" />
         Download Resume
       </a>
