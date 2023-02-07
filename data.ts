@@ -30,61 +30,22 @@ export const services: Service[] = [
   },
 ];
 
-export const languages: Skill[] = [
-  {
-    name: "JavaScript",
-    level: "100",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "TypeScript",
-    level: "100",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "PostgresQL",
-    level: "100",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "NoSQL",
-    level: "100",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "React.js",
-    level: "100",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "Redux/RTK",
-    level: "100",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "Sequelize",
-    level: "100",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "Express",
-    level: "100",
-    Icon: BsCircleFill,
-  },
-  {
-    name: "Stripe",
-    level: "100",
-    Icon: BsCircleFill,
-  },
+export const frontend: Skill[] = [
+  { name: "Next.js", Icon: BsCircleFill },
+  { name: "TypeScript", Icon: BsCircleFill },
+  { name: "JavaScript", Icon: BsCircleFill },
+  { name: "Redux/RTK", Icon: BsCircleFill },
+  { name: "Vercel", Icon: BsCircleFill },
+  { name: "Figma", Icon: BsCircleFill },
 ];
 
-export const tools: Skill[] = [
-  { name: "Next.js", level: "100", Icon: BsCircleFill },
-  { name: "Vercel", level: "100", Icon: BsCircleFill },
-  { name: "Firebase", level: "100", Icon: BsCircleFill },
-  { name: "Git", level: "100", Icon: BsCircleFill },
-  { name: "Github", level: "100", Icon: BsCircleFill },
-  { name: "Figma", level: "100", Icon: BsCircleFill },
+export const backend: Skill[] = [
+  { name: "Postgresql", Icon: BsCircleFill },
+  { name: "Nosql", Icon: BsCircleFill },
+  { name: "Sequelize", Icon: BsCircleFill },
+  { name: "Express", Icon: BsCircleFill },
+  { name: "Stripe", Icon: BsCircleFill },
+  { name: "Firebase", Icon: BsCircleFill },
 ];
 
 export const projects: Project[] = [

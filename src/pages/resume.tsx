@@ -1,5 +1,5 @@
 import Bar from "@/components/Bar";
-import { languages, tools } from "data";
+import { frontend, backend } from "data";
 import { motion } from "framer-motion";
 import { fadeInUp, routeAnimation } from "animations";
 const resume = () => {
@@ -32,7 +32,7 @@ const resume = () => {
               Talent Acquisition Specialist
             </h5>
             <p className="font-semibold">
-              Fullstack Academy (07/2022 - 11/2022)
+              Credit Saint LLC (02/2020 - 05/2022)
             </p>
             <p className="my-3">
               Lead the full recruitment life-cycle, from sourcing strategies,
@@ -43,18 +43,18 @@ const resume = () => {
       </div>
       <div className="grid gap-6 md:grid-cols-2">
         <div>
-          <h5 className="my-3 text-2xl font-bold">Languages & Frameworks</h5>
+          <h5 className="my-3 text-2xl font-bold">Frontend</h5>
           <div className="my-2">
-            {languages.map((lang) => (
+            {frontend.map((lang) => (
               <Bar data={lang} key={lang.name} />
             ))}
           </div>
         </div>
         <div>
-          <h5 className="my-3 text-2xl font-bold">Tools & Softwares</h5>
+          <h5 className="my-3 text-2xl font-bold">Backend</h5>
           <div className="my-2">
-            {tools.map((tool) => (
-              <Bar data={tool} key={tool.name} />
+            {backend.map((lang) => (
+              <Bar data={lang} key={lang.name} />
             ))}
           </div>
         </div>

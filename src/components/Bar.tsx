@@ -5,7 +5,7 @@ type BarProps = {
   data: Skill;
 };
 
-const Bar: React.FC<BarProps> = ({ data: { Icon, level, name } }) => {
+const Bar: React.FC<BarProps> = ({ data: { Icon, name } }) => {
   const variants = {
     initial: {
       opacity: 0,
