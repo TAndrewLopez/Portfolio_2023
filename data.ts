@@ -51,7 +51,7 @@ export const backend: Skill[] = [
 export const projects: Project[] = [
   {
     id: 1,
-    name: "Discourse Forum",
+    name: "Reddit Clone",
     description: "Community Forum Website",
     imageURL: "/images/discourse.png",
     deployedURL: "https://discourse-forum.vercel.app/",
