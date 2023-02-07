@@ -34,6 +34,7 @@ const Sidebar = () => {
         Fullstack Engineer
       </p>
       <a
+        aria-label="resume download"
         className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full dark:bg-dark-200 hover:bg-blue-400 dark:hover:bg-dark-700"
         // TODO: upload resume to asset folder when completed
         href="/assets/developerResume.pdf"
@@ -45,12 +46,14 @@ const Sidebar = () => {
       {/* ICONS */}
       <div className="flex justify-around w-9/12 mx-auto my-5 text-green-default md:w-full">
         <a
+          aria-label="linkedin"
           onClick={() =>
             openInNewTab("https://www.linkedin.com/in/tandrewlopez/")
           }>
           <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
         </a>
         <a
+          aria-label="github"
           onClick={() =>
             openInNewTab("https://github.com/TAndrewLopez?tab=repositories")
           }>
