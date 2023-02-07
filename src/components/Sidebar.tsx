@@ -1,4 +1,5 @@
 import { useTheme } from "next-themes";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { GiTie } from "react-icons/gi";
@@ -17,7 +18,10 @@ const Sidebar = () => {
 
   return (
     <div>
-      <img
+      <Image
+        width={128}
+        height={128}
+        priority
         src="/images/aiGenerated02.jpeg"
         alt="Dev Image"
         className="w-32 h-32 mx-auto rounded-full"

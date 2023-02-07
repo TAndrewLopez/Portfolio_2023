@@ -98,7 +98,7 @@ export const projects: Project[] = [
     technologies: ["Next.js", "TypeScript", "Chakra", "Recoil", "Firebase"],
   },
   {
-    name: "Generational Records",
+    name: "Gen Records",
     description: "E-Commerce Website",
     imageURL: "/images/genRecords.jpeg",
     deployedURL: "https://gen-records.vercel.app/",
