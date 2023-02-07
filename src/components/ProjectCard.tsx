@@ -1,5 +1,6 @@
 import { fadeInUp, stagger } from "animations";
 import { motion } from "framer-motion";
+import { openInNewTab } from "helperFuncs";
 import Image from "next/image";
 import { AiFillGithub, AiFillProject } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
@@ -58,16 +59,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               variants={fadeInUp}
               className="flex justify-center my-4 space-x-3">
               <a
-                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
-                href={githubURL}>
+                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 cursor-pointer dark:bg-dark-200"
+                onClick={() => openInNewTab(githubURL)}>
                 <AiFillGithub />
                 <span>Github</span>
               </a>
               <a
-                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200"
-                href={deployedURL}>
+                className="flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 cursor-pointer dark:bg-dark-200"
+                onClick={() => openInNewTab(deployedURL)}>
                 <AiFillProject />
-                <span>Live Site</span>
+                <span>Site</span>
               </a>
             </motion.div>
           </motion.div>

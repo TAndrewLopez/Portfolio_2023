@@ -17,7 +17,7 @@ const Home = () => {
         building accessible, human-centered products.
       </h5>
       <div
-        className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-400"
+        className="flex-grow p-4 mt-5 bg-gray-400 bg-opacity-50 dark:bg-dark-400"
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}>
         <h6 className="my-3 text-xl font-bold tracking-wide">What I offer:</h6>
         <motion.div
