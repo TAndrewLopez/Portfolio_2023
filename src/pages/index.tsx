@@ -2,6 +2,7 @@ import ServiceCard from "@/components/ServiceCard";
 import { fadeInUp, routeAnimation, stagger } from "animations";
 import { motion } from "framer-motion";
 import { services } from "../../data";
+import Head from "next/head";
 
 const Home = () => {
   return (
@@ -11,6 +12,9 @@ const Home = () => {
       initial="initial"
       animate="animate"
       exit="exit">
+      <Head>
+        <title>Andrew Dobson | Fullstack Engineer</title>
+      </Head>
       <h5 className="my-3 font-medium">
         I'm a software engineer specializing in building (and occasionally
         designing) exceptional digital experiences. Currently, I'm focused on

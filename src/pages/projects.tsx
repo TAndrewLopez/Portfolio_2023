@@ -3,6 +3,7 @@ import ProjectsNavbar from "@/components/ProjectsNavbar";
 import { fadeInUp, routeAnimation, stagger } from "animations";
 import { projects } from "data";
 import { motion } from "framer-motion";
+import Head from "next/head";
 import { useState } from "react";
 import { Category } from "types";
 
@@ -34,6 +35,9 @@ const Projects = () => {
       initial="initial"
       animate="animate"
       exit="exit">
+      <Head>
+        <title>Andrew Dobson | Fullstack Engineer</title>
+      </Head>
       <ProjectsNavbar
         handleFilterCategory={handleFilterCategory}
         active={active}

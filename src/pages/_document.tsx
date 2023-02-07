@@ -4,6 +4,14 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <meta
+          name="description"
+          content="Fullstack Developer available for hire."
+        />
+        <meta
+          name="keywords"
+          content="Fullstack Software Engineer, Web Developer, Freelancer, PERN Developer"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
