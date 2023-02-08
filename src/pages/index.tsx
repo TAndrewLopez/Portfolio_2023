@@ -16,9 +16,10 @@ const Home = () => {
         <title>Andrew Dobson | Fullstack Engineer</title>
       </Head>
       <h5 className="my-3 font-medium">
-        I'm a software engineer specializing in building (and occasionally
-        designing) exceptional digital experiences. Currently, I'm focused on
-        building accessible, human-centered products.
+        I'm a Fullstack Software Engineer who's passion for technology drives
+        innovative solutions to everyday problems. Whether I'm working at a
+        start-up or larger corporation, my ability to quickly adapt has become
+        an intrinsic skill for the world of technology.
       </h5>
       <div
         className="flex-grow p-4 mt-5 bg-gray-400 bg-opacity-50 dark:bg-dark-400"
